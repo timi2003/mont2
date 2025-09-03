@@ -4,29 +4,3 @@
   ]
 }
 
-{
-  "version": 2,
-  "headers": [
-    {
-      "source": "/_astro/(.*)\\.js",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/javascript"
-        }
-      ]
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/_astro/(.*)",
-      "destination": "/_astro/$1"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ],
-  "cleanUrls": true,
-  "trailingSlash": false
-}
